@@ -2,8 +2,8 @@
 This is an API that generate a book recommendation to the user based on a genre. Helping users to discover relevant reading materials tailored to their preferences.
 This API presents data in a clear, logical format to ensure effortless comprehension. It also empowers users with interactive features like filtering and incorporates robust error handling for a smooth and responsive web experience.
 
-API Original Creator: [Sameer Kashyap](https://rapidapi.com/user/mistakenpirate38)
-API Documentation: [Rapidapi](https://rapidapi.com/mistakenpirate38/api/book-recommender1)
+**API Original Creator:** [Sameer Kashyap](https://rapidapi.com/user/mistakenpirate38)
+**API Documentation:** [Rapidapi](https://rapidapi.com/mistakenpirate38/api/book-recommender1)
 # usage
 Try The API from [My Website](https://www.hamed-alfatih.tech/api.html)
 Watch This [Demo Video](https://www.loom.com/share/f2de627d353c41ee9cdb46a66c01a8c2?sid=ae10d278-06b1-4db1-9f9d-c47a9473d417)
