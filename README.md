@@ -4,9 +4,9 @@ This API presents data in a clear, logical format to ensure effortless comprehen
 
 **API Original Creator:** [Sameer Kashyap](https://rapidapi.com/user/mistakenpirate38)
 **API Documentation:** [Rapidapi](https://rapidapi.com/mistakenpirate38/api/book-recommender1)
-# usage
+# Usage
 Try The API from [My Website](https://www.hamed-alfatih.tech/api.html)
-Watch This [Demo Video](https://www.loom.com/share/f2de627d353c41ee9cdb46a66c01a8c2?sid=ae10d278-06b1-4db1-9f9d-c47a9473d417)
+& Watch This [Demo Video](https://www.loom.com/share/f2de627d353c41ee9cdb46a66c01a8c2?sid=ae10d278-06b1-4db1-9f9d-c47a9473d417)
 # Challanges
 - The deadline was a huge challange for me but I was able to overcome this problem by rearangin my priorities  & dedication.
 - Some of The requirement were very difficult to obtain information about- but I was able to utilize my research skills to get all the documentations I need.
