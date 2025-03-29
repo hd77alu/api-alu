@@ -6,7 +6,7 @@ This API presents data in a clear, logical format to ensure effortless comprehen
 **API Documentation:** [Rapidapi](https://rapidapi.com/mistakenpirate38/api/book-recommender1)
 # Usage
 Try The API from [My Website](https://www.hamed-alfatih.tech/api.html)
-& Watch This [Demo Video](https://www.loom.com/share/f2de627d353c41ee9cdb46a66c01a8c2?sid=ae10d278-06b1-4db1-9f9d-c47a9473d417)
+& Watch This [Demo Video](https://www.loom.com/share/280d79eab6bf4fd9a214a4ad24bf220f)
 # Challanges
 - The deadline was a huge challange for me but I was able to overcome this problem by rearangin my priorities  & dedication.
 - Some of The requirement were very difficult to obtain information about- but I was able to utilize my research skills to get all the documentations I need.
@@ -30,4 +30,6 @@ scp -i ~/.ssh/school filename user@<IP address>:<destination>
 - Edited the Nginx configuration file located at ```/etc/nginx/sites-available/default``` to correctly serve the desired HTML file.
 - Restarted the Nginx service to apply the configuration updates.
 - Accessed the load balancer server and verified that the configuration file ```/etc/haproxy/haproxy.cfg``` was set up to distribute traffic evenly between the two servers, ensuring consistent content delivery.
+# Bonus Task
+Implementing input validation for advanced security measures and protection against common vulnerabilities like SQL injection and cross-site scripting (XSS) attacks.
 
