@@ -7,6 +7,15 @@ This API presents data in a clear, logical format to ensure effortless comprehen
 # Usage
 Try The API from [My Website](https://www.hamed-alfatih.tech/api.html)
 & Watch This [Demo Video](https://www.loom.com/share/280d79eab6bf4fd9a214a4ad24bf220f)
+- To run the application localay `git clone https://github.com/hd77alu/api-alu`
+- Go to the project `cd api-alu`
+- obtain an APi key from [Rapidapi](https://rapidapi.com/mistakenpirate38/api/book-recommender1)
+- Edit the `api.js` headers
+   ```
+  headers: {
+        'x-rapidapi-key': [your API Key]
+  ```
+- Star your local server `http-server -p 8000` & Run it in the browser `http://localhost:8000`
 # Challanges
 - The deadline was a huge challange for me but I was able to overcome this problem by rearangin my priorities  & dedication.
 - Some of The requirement were very difficult to obtain information about- but I was able to utilize my research skills to get all the documentations I need.
@@ -25,11 +34,12 @@ Try The API from [My Website](https://www.hamed-alfatih.tech/api.html)
 ```
 scp -i ~/.ssh/school filename user@<IP address>:<destination>
 ```
-- Accessed the remote servers via SSH to verify and manage the transferred files.
+- Accessed the remote servers (web-01, web-02) via SSH to verify and manage the transferred files.
 - Ensured all files were correctly placed in the ```/var/www/html/``` directory on the Nginx servers.
 - Edited the Nginx configuration file located at ```/etc/nginx/sites-available/default``` to correctly serve the desired HTML file.
+- Run `sudo service nginx -t` to make that the configuration is ok.
 - Restarted the Nginx service to apply the configuration updates.
-- Accessed the load balancer server and verified that the configuration file ```/etc/haproxy/haproxy.cfg``` was set up to distribute traffic evenly between the two servers, ensuring consistent content delivery.
+- Accessed the load balancer server (lb-01) and verified that the configuration file ```/etc/haproxy/haproxy.cfg``` was set up to distribute traffic evenly between the two servers, ensuring consistent content delivery.
 # Bonus Task
 Implementing input validation for advanced security measures and protection against common vulnerabilities like SQL injection and cross-site scripting (XSS) attacks.
 
