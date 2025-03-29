@@ -7,7 +7,7 @@ const genreInput = document.getElementById('genreInput');
 const booksResults = document.getElementById('booksResults');
 const booksList = document.getElementById('booksList');
 const genreInputError = document.getElementById('genreInputError');
-const resultsFilter = document.getElementById('resultsFilter'); // Dropdown for results filtering
+const resultsFilter = document.getElementById('resultsFilter');
 
 // API settings
 const options = {
@@ -30,20 +30,27 @@ const handleSearch = async (e) => {
     isFetching = true;
     searchButton.disabled = true;
 
+    // Input Pattern
+    const validateInput = (input) => {
+        // Only allow alphabetical characters for genres
+        const genreRegex = /^[a-zA-Z\s]+$/;
+        return !(!input || input.length < 3 || !genreRegex.test(input));
+    };
+
     // Get user input, trim it, and convert to lowercase
     const genre = genreInput.value.trim().toLowerCase();
     genreInputError.textContent = ''; // Clear previous errors
 
     // Input validation
-    if (!genre) {
-        genreInputError.textContent = 'Please enter a genre';
+    if (!validateInput(genre)) {
+        genreInputError.textContent = 'Invalid input. Please enter a valid genre.';
         genreInput.focus();
         searchButton.disabled = false;
         isFetching = false;
         return;
     }
 
-    // Clear previous results and reset UI
+    // Clear previous results
     booksList.innerHTML = '';
     booksResults.style.display = 'none';
 
@@ -54,7 +61,7 @@ const handleSearch = async (e) => {
         // Create a timeout for the fetch request
         const controller = new AbortController();
         const signal = controller.signal;
-        const timeout = setTimeout(() => controller.abort(), 10000); // Set timeout to 10 seconds
+        const timeout = setTimeout(() => controller.abort(), 10000); // Timeout is 10 seconds
 
         // Perform the API request
         const response = await fetch(url, { ...options, signal: controller.signal });
@@ -79,7 +86,7 @@ const handleSearch = async (e) => {
         booksResults.style.display = 'block';
     } catch (error) {
         console.error('Error fetching books:', error);
-        genreInputError.textContent = 'API is down at the moment. Please try again.';
+        genreInputError.textContent = 'API is down at the moment. Please try again';
     } finally {
         isFetching = false;
         searchButton.disabled = false;
